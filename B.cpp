@@ -1,29 +1,25 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-#define int long long
-#define INF 0x3f3f3f3f3f3f3f3f
-#define nax (int) (1e5+5)
+#define ar array
+#define ll long long
 
-int n, a[nax];
+const int MAX_N = 1e5 + 1;
+const ll MOD = 1e9 + 7;
+const ll INF = 1e9;
 
-int32_t main(){
-  ios::sync_with_stdio(false);
-  cin.tie(0);
-  cin >> n;
-  for(int i=1; i<=n; ++i){
-    cin >> a[i];
-  }
-  int res=0;
-  sort(a+1,a+1+n,greater<int>());
-  for(int i=1; i<=n; ++i){
-    if(!(i%3)){
-      continue;
-    } else{
-      res+=a[i];
+void solve() {
+
+}
+
+int main() {
+    ios_base::sync_with_stdio(0);
+    cin.tie(0); cout.tie(0);
+    int tc = 1;
+    // cin >> tc;
+    for (int t = 1; t <= tc; t++) {
+        // cout << "Case #" << t  << ": ";
+        solve();
     }
-  }
-  cout << res;
-  return 0;
 }
